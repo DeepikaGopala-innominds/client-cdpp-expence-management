@@ -56,6 +56,13 @@ const signUpConfig = {
       required: true,
       displayOrder: 4,
       type: 'string'
+    },
+    {
+      label: 'Address',
+      key: 'address',
+      required: true,
+      displayOrder: 4,
+      type: 'string'
     }
   ]
 };

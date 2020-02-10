@@ -49,7 +49,8 @@
     "triggers": "{\"DefineAuthChallenge\":[\"captcha-define-challenge\"],\"CreateAuthChallenge\":[\"captcha-create-challenge\"],\"VerifyAuthChallengeResponse\":[\"captcha-verify\"]}",
     "userPoolGroupList": [
         "editors",
-        "admin"
+        "admin",
+        "CDPP"
     ],
     "parentStack": {
         "Ref": "AWS::StackId"

@@ -131,6 +131,52 @@
             }
         },
     
+        "CDPPGroup": {
+          "Type" : "AWS::Cognito::UserPoolGroup",
+          "Properties" : {
+              "GroupName" : "CDPP",
+              "Precedence" : 3,
+              "RoleArn" : {
+                "Fn::GetAtt": [
+                    "CDPPGroupRole",
+                    "Arn"
+                ]
+              },
+              "UserPoolId" : {
+                "Ref": "authclientcdppexpenceman68bfcc2aUserPoolId"
+              } 
+            }
+        },
+        "CDPPGroupRole": {
+            "Type": "AWS::IAM::Role",
+            "Properties": {
+                "RoleName":{
+                    "Fn::Join": [
+                        "",
+                        [
+                          {
+                            "Ref": "authclientcdppexpenceman68bfcc2aUserPoolId"
+                          },
+                          "-CDPPGroupRole"
+                        ]
+                    ]
+                },
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Sid": "",
+                            "Effect": "Allow",
+                            "Principal": {
+                                "Federated": "cognito-identity.amazonaws.com"
+                            },
+                            "Action": "sts:AssumeRoleWithWebIdentity"
+                        }
+                    ]
+                }
+            }
+        },
+    
         "LambdaExecutionRole": {
             "Type": "AWS::IAM::Role",
             "Properties": {
@@ -343,6 +389,17 @@
             "Value": {
                 "Fn::GetAtt": [
                     "adminGroupRole",
+                    "Arn"
+                ]
+            }
+         
+        },
+        
+      
+        "CDPPGroupRole": {
+            "Value": {
+                "Fn::GetAtt": [
+                    "CDPPGroupRole",
                     "Arn"
                 ]
             }
