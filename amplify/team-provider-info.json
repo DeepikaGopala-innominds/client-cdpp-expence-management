@@ -1,0 +1,27 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-clientcdppexpenceman-dev-210828-authRole",
+            "UnauthRoleArn": "arn:aws:iam::920645551491:role/amplify-clientcdppexpenceman-dev-210828-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::920645551491:role/amplify-clientcdppexpenceman-dev-210828-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-clientcdppexpenceman-dev-210828-deployment",
+            "UnauthRoleName": "amplify-clientcdppexpenceman-dev-210828-unauthRole",
+            "StackName": "amplify-clientcdppexpenceman-dev-210828",
+            "StackId": "arn:aws:cloudformation:us-east-1:920645551491:stack/amplify-clientcdppexpenceman-dev-210828/bc3499e0-48f6-11ea-a647-0a05dbc7583b",
+            "AmplifyAppId": "d23df2rdc4h7s8"
+        },
+        "categories": {
+            "function": {
+                "clientcdppexpenceman68bfcc2aDefineAuthChallenge": {},
+                "clientcdppexpenceman68bfcc2aCreateAuthChallenge": {},
+                "clientcdppexpenceman68bfcc2aVerifyAuthChallengeResponse": {
+                    "RECAPTCHASECRET": ""
+                }
+            },
+            "auth": {
+                "clientcdppexpenceman68bfcc2a": {}
+            }
+        }
+    }
+}

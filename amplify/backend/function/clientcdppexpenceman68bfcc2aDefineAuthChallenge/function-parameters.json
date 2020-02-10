@@ -1,0 +1,16 @@
+{
+    "trigger": true,
+    "modules": [
+        "captcha-define-challenge"
+    ],
+    "parentResource": "clientcdppexpenceman68bfcc2a",
+    "functionName": "clientcdppexpenceman68bfcc2aDefineAuthChallenge",
+    "parentStack": "auth",
+    "triggerEnvs": "[]",
+    "triggerDir": "/usr/local/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/DefineAuthChallenge",
+    "roleName": "clientcdppexpenceman68bfcc2aDefineAuthChallenge",
+    "triggerTemplate": "DefineAuthChallenge.json.ejs",
+    "triggerEventPath": "DefineAuthChallenge.event.json",
+    "skipEdit": true,
+    "resourceName": "clientcdppexpenceman68bfcc2aDefineAuthChallenge"
+}

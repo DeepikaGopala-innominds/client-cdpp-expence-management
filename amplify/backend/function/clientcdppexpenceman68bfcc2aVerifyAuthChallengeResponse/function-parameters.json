@@ -1,0 +1,16 @@
+{
+    "trigger": true,
+    "modules": [
+        "captcha-verify"
+    ],
+    "parentResource": "clientcdppexpenceman68bfcc2a",
+    "functionName": "clientcdppexpenceman68bfcc2aVerifyAuthChallengeResponse",
+    "parentStack": "auth",
+    "triggerEnvs": "[]",
+    "triggerDir": "/usr/local/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/VerifyAuthChallengeResponse",
+    "roleName": "clientcdppexpenceman68bfcc2aVerifyAuthChallengeResponse",
+    "triggerTemplate": "VerifyAuthChallengeResponse.json.ejs",
+    "triggerEventPath": "VerifyAuthChallengeResponse.event.json",
+    "skipEdit": true,
+    "resourceName": "clientcdppexpenceman68bfcc2aVerifyAuthChallengeResponse"
+}
